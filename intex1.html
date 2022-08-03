@@ -1,0 +1,142 @@
+<head>
+    <script type="text/javascript" src="REGform.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <style>
+    div {divst-style-type:none;}
+    form{
+      background-color: #16b4db; text-align: center;
+    }
+    .error{
+      color: red;
+    }
+    </style>
+    </head>
+     
+    <body>
+    <form action="#" name="StudenSignupForm" >
+     
+    <div cellpadding="2" width="20%"  adivgn="center" cellspacing="2">
+     
+    <div>
+    <div>
+  <fontsize=4><b><h1>Student Registration Form</h1></b>
+    </div>
+    </div>
+     
+    <div>
+    <div><b>First Name</b></div>
+    <div><input type=text name=textnames id="fname" size="30"></div>
+    <div id="mm" class="error"></div>
+    </div>
+     
+      <div>
+    <div><b>Last Name</b></div>
+    <div><input type=text name=textnames id="lname" size="30">
+        <span id="errorId" class="error"></span>
+</div>
+    </div>
+    
+      
+    <div>
+    <div><b>Father Name</div>
+    <div><input type="text" name="fathername" id="fathername" size="30"></div>
+        <div id="invalid" class="error"></div>
+</div>
+ 
+ 
+<div>
+<div><b>Address</b></div>
+<div><textarea name="Address" id="address"></textarea></div>
+<div id="invalidaddress" class="error"></div>
+</div>
+ 
+ <div>
+<div>Gender</div>
+<div><input type="radio" name="sex" value="male" size="10">Male
+<input type="radio" name="sex" value="Female" size="10">Female</div>
+<div id="selectone"class="error"></div>
+ </div> 
+ 
+<div>
+<div><b>City</b></div>
+<div><select id="city">
+<option value="" selected>select..</option>
+<option value="BANGALOR">BANGALORE</option>
+<option value="CHENNAI">CHENNAI</option>
+<option value="PUNE">PUNE</option>
+<option value="JAIPUR">JAIPUR</option>
+</select></div>
+<div id="errorcity" class="error"></div>
+</div>
+ 
+<div>
+<div><b>Course</b></div>
+<div><select id="course">
+<option value="" selected>select..</option>
+<option value="B.Tech">B.TECH</option>
+<option value="MCA">MCA</option>
+<option value="MBA">MBA</option>
+<option value="BCA">BCA</option>
+</select></div>
+<div id="invalidcourse" class="error"></div>
+</div>
+ 
+ 
+ 
+<div>
+<div><b>State</b></div>
+<div><select id="State">
+<option value="" selected>select..</option>
+<option value="New Delhi">NEW DELHI</option>
+<option value="Mumbai">MUMBAI</option>
+<option value="Goa">GOA</option>
+<option value="Tamilnadu">TAMILNADU</option>
+</select></div>
+<div id="invalidstate" class="error"></div>
+</div>
+  
+  <div>
+<div><b>District</b></div>
+<div><select id="District">
+<option value="" selected>select..</option>
+<option value="Nalanda">NALANDA</option>
+<option value="UP">UP</option>
+<option value="Goa">GOA</option>
+<option value="Thanjavur">THANJAVUR</option>
+</select></div>
+<div id="invaliddistrict" class="error"></div>
+ 
+</div>
+  
+<div>
+<div><b>Pincode</b></div>
+<div><input type="text" name="pin_code" id="Pincode" size="30"></div>
+<div id="invalidPincode"  class="error"></div>
+ 
+</div>
+<div>
+<div><b>Student Email</b></div>
+<div><input type="text" name="email_id" id="email" size="30"></div>
+<div id="invalidemail" class="error"></div>
+</div>
+ 
+<div>
+<div><b>Date Of Birth</b></div>
+<div><input type="text" name="date_of_birth" id="dob" size="30"></div>
+<div id="invaliddob" class="error"></div>
+</div>
+ 
+<div>
+<div><b>Mobile Number</b></div>
+<div><input type="text" name="mobilenumber" id="mobileno" size="30"></div>
+<div id="invalidmnumber" class="error"></div>
+</div><br/>
+<div>
+<div><input type="reset"></div><br/>
+<div colspan="2"><input type="button" onclick="validateHTMlform()" value="Submit Form"></div>
+</div>
+</div>
+</form>
+</body>
+</html>
